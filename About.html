@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="About.css">
+    <link rel="stylesheet" type="text/css" href="/About.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Tim Leatau</title>
+    <title>Tim Leatau About me</title>
 </head>
 <body>
+    
     
 <section class="hero">
     <div class="main-width">
         <header>
-            <div class="logo">
+            
+            <div class="logo"><a href="/About.html">
                 <i class="fa-regular fa-t"></i>
-                <i class="fa-regular fa-l"></i>
+                <i class="fa-regular fa-l"></i></a>
             </div>
             <nav>
                <div class="hamb">
@@ -26,28 +28,17 @@
                 <span></span>
                </div> 
                <ul class="nav-list">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/About.html">About Me</a></li>
-                    <li><a href="/Porfolio.html">Porfolio</a></li>
-                    <li><a href="/xp.html">Experiance</a></li>
-                    <li><a href="#" class="neon-button neon-button__3">Hover on me</a></li>
-                    
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/About.html"style="color: rgb(0, 0, 0);
+                  text-shadow: 0 0 10px rgb(255, 255, 255); font-weight: bold ;">About Me</a></li>
+                <li><a href="/Porfolio.html">Porfolio</a></li>
+                <li><a href="/xp.html">Experiance</a></li>
+                    <li class="btn"><a href="/Contact.html">Contact Me</a></li>
                </ul>
             </nav>
         </header>
 
-          <script>
-          const links = document.querySelectorAll("a");
 
-links.forEach((link) => {
-  link.addEventListener("click", (event) => {
-    event.preventDefault();
-    event.target.classList.add("active");
-    setTimeout(() => {
-      event.target.classList.remove("active");
-    }, 500);
-  });
-});
-</script>
+
 </body>
 </html>

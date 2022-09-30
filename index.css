@@ -8,9 +8,12 @@
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
     scroll-behavior: smooth;
+
+    
 }
 body{
     overflow-x: hidden;
+    
 }
 
 /*Sets the main width of the selected area*/
@@ -271,27 +274,98 @@ span{
     text-decoration: none;
     color: #ffd700;
 }
-
-.container2 {
-    padding: 44px;
-}
-
-.Box-above-innner{
-    width: 60%;
-}
-
-.inner-content{
-    padding: 0 10rem;
-    
-}
-.inner-content h1 {
+.projects{
     color: #000000;
-    
-}  
-.inner-content p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    font-size: 40px;
+    margin: 20px 20px;
+    text-decoration: none;
 }
+
+
+.container-2 {
+    padding: 64px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+  
+  .column-66 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+  }
+  
+  .column-33 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+  }
+  .column-33 img{
+    cursor: pointer;
+    box-shadow: 5px 8px 5px #000000;
+
+  }
+  .column-33 img:hover{
+    box-shadow: 15px 18px 15px #000000;
+    transition: 0.9s ease-in-out;
+    transform: scale(1.1);
+    
+  }
+  .column-33 img::after{
+    transition: 0.9s;
+    transform: scale(0.1);
+  }
+  
+  
+  .large-font {
+    font-size: 48px;
+  }
+  
+  .xlarge-font {
+    font-size: 64px
+  }
+  
+  .button {
+    margin: 20px;
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #04AA6D;
+  }
+  .fa-iconz{
+    justify-content: space-between;
+    margin: 0px 0px;
+  }
+  .fa-iconz i{
+    justify-content: space-between;
+    margin: 10px 10px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #000000;
+  }
+  .fa-iconz i:hover{
+    color: #04AA6D;
+    cursor: pointer;
+  }
+  
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      margin: auto;
+    }
+  }
