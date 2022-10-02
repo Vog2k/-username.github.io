@@ -29,13 +29,59 @@ body{
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  background:url(/Images/229760171_2983267938608641_1769614457803914487_n.jpg);
+  background:url(/Images/wp2539293-auckland-wallpapers.jpg);
   position: relative;
   opacity: .85;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+}
+
+span {
+  color: #ffffff;
+  font-size: 5rem;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  letter-spacing: 2px;
+}
+.red{
+  transform: scale(1.5);
+  transition: 0.1s ease-in-out;
+  text-shadow: #000000;
+}
+
+span.red:hover {
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ff595e, 0 0 15px #ff595e, 0 0 20px #ff595e, 0 0 30px #ff595e, 0 0 40px #ff595e, 0 0 55px #ff595e, 0 0 75px #ff595e;
+  transform: scale(1.5);
+  transition: 0.1s ease-in-out;
+}
+
+span.pink:hover {
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #eb2bc1, 0 0 15px #eb2bc1, 0 0 20px #eb2bc1, 0 0 30px #eb2bc1, 0 0 40px #eb2bc1, 0 0 55px #eb2bc1, 0 0 75px #eb2bc1;
+  transform: scale(0.1);
+  transition: 0.1s ease-in-out;
+}
+
+span.green:hover {
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #8ac926, 0 0 15px #8ac926, 0 0 20px #8ac926, 0 0 30px #8ac926, 0 0 40px #8ac926, 0 0 55px #8ac926, 0 0 75px #8ac926;
+  transform: scale(1.5);
+  transition: 0.1s ease-in-out;
+}
+
+span.blue:hover {
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #1982c4, 0 0 15px #1982c4, 0 0 20px #1982c4, 0 0 30px #1982c4, 0 0 40px #1982c4, 0 0 55px #1982c4, 0 0 75px #1982c4;
+  transform: scale(1.5);
+  transition: 0.1s ease-in-out;
 }
 
 header{
@@ -138,9 +184,7 @@ nav .nav-list li.btn:hover a{
   line-height: 1.2;
   margin: 20px 0px 20px;
 }
-span{
-  color: #ffd700;
-}
+
 .container .hero-text h3{
   color: #eee;
   font-size: 20px;
@@ -173,7 +217,7 @@ span{
 
 }
 .social a:hover{
-  transform: scale(1.1);
+  transform: scale(1.5);
   background: #000000;
   transition: 0.4s;
 }
@@ -232,7 +276,7 @@ span{
       background: rgb(160, 160, 160);
       z-index: 2;
       padding: 6% 9%;
-      transition: 0.3s right;
+      transition: 0.1s right;
       border-radius: 10px;
   }
   nav .nav-list li{
