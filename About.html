@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +19,8 @@
             
             <div class="logo"><a href="/About.html">
                 <i class="fa-regular fa-t"></i>
-                <i class="fa-regular fa-l"></i></a>
+                <i class="fa-regular fa-l"></i>
+            </a>
             </div>
             <nav>
                <div class="hamb">
@@ -37,24 +38,33 @@
                </ul>
             </nav>
         </header>
-        <span class="red">T</span>
-        <span class="pink">i</span>
-        <span class="green">m</span>
-        <span class="blue">o</span>
-        <span class="red">t</span>
-        <span class="pink">h</span>
-        <span class="blue" style="transform: scale(1.5);" >y</span>
 
+        <script>
+            var hamburger = document.querySelector(".hamb");
+            var navlist = document.querySelector(".nav-list"); 
+            var links = document.querySelector(".nav-list li");
+            hamburger.addEventListener("click", function (){
+            this.classList.toggle("click");
+            navlist.classList.toggle("open");
+    });
+        </script>
+        <div class="A1">
+        <span class="red">T</span>
+        <span class="yellow">I</span>
+        <span class="green">M</span>
+        <span class="blue">O</span>
+        <span class="red">T</span>
+        <span class="yellow">H</span>
+        <span class="green">Y</span>
+        
         <br>
 
         <span class="red">L</span>
-        <span class="pink">e</span>
-        <span class="green">a</span>
-        <span class="blue">t</span>
-        <span class="red">a</span>
-        <span class="pink">u</span>
-        
-
-
+        <span class="yellow">E</span>
+        <span class="green">A</span>
+        <span class="blue">T</span>
+        <span class="red">A</span>
+        <span class="yellow">U</span>
+</div>
 </body>
 </html>
