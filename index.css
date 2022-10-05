@@ -169,7 +169,7 @@ span{
     cursor: pointer;
     margin-right: 20px;
     margin-bottom: 35px;
-   background: transparent;
+    background: transparent;
 
 }
 .social a:hover{
@@ -187,11 +187,8 @@ span{
     border: 2px solid #2ecc71;
     border-radius: 30px;
     cursor: pointer;
-
 }
 .container .hero-text button:hover {
-
-   
    border : 2px solid #2ecc71 ;
    color : #000000 ;
    transition : .4s ;
@@ -201,6 +198,8 @@ span{
  @media screen and ( max-width : 930px ) {
     nav .hamb{
     display : initial ;
+
+    
     }
     .click{
         top : 46px ;
@@ -222,22 +221,26 @@ span{
         transform: rotate(40deg);
         top: 0;
     }
+
     nav .nav-list{
         position: absolute;
         top: 90px;
         right: -65%;
         bottom: 0%;
         width: 60%;
-        height: 50%;
+        height: 65%;
         background: rgb(160, 160, 160);
         z-index: 2;
         padding: 6% 9%;
         transition: 0.3s right;
-        border-radius: 10px;
+
+
     }
     nav .nav-list li{
         display: block;
+        
     }
+
     nav .nav-list li a{
         display: block;
         text-align: center;
@@ -254,9 +257,11 @@ span{
         left: 20%;
         padding: 7px 15px;
         font-size: 14px;
+        
     }
     nav .nav-list.open{
-        right: 0;
+        right: 20px;
+        
     }
 }
 

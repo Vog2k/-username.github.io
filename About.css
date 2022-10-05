@@ -139,32 +139,6 @@ nav .nav-list li.btn:hover a{
   margin: 20px 0px 20px;
 }
 
-.A1 {
-  font-family: 'Poppins', sans-serif;
-  color: #000000;
-  font-size: 5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  transition: 0.5s;
-  cursor: pointer;
-  user-select: none;
-}
-span.red:hover {
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #ff595e, 0 0 15px #ff595e, 0 0 20px #ff595e, 0 0 30px #ff595e, 0 0 40px #ff595e, 0 0 55px #ff595e, 0 0 75px #ff595e;
-}
-
-span.yellow:hover {
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffca3a, 0 0 15px #ffca3a, 0 0 20px #ffca3a, 0 0 30px #ffca3a, 0 0 40px #ffca3a, 0 0 55px #ffca3a, 0 0 75px #ffca3a;
-}
-
-span.green:hover {
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #8ac926, 0 0 15px #8ac926, 0 0 20px #8ac926, 0 0 30px #8ac926, 0 0 40px #8ac926, 0 0 55px #8ac926, 0 0 75px #8ac926;
-}
-
-span.blue:hover {
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #1982c4, 0 0 15px #1982c4, 0 0 20px #1982c4, 0 0 30px #1982c4, 0 0 40px #1982c4, 0 0 55px #1982c4, 0 0 75px #1982c4;
-}
-
 .container .hero-text h3{
   color: #eee;
   font-size: 20px;
@@ -215,6 +189,7 @@ span.blue:hover {
 }
 .container .hero-text button:hover {
 
+  
  
  border : 2px solid #2ecc71 ;
  color : #000000 ;
@@ -252,7 +227,7 @@ span.blue:hover {
       right: -65%;
       bottom: 0%;
       width: 60%;
-      height: 50%;
+      height: 65%;
       background: rgb(160, 160, 160);
       z-index: 2;
       padding: 6% 9%;
@@ -283,3 +258,274 @@ span.blue:hover {
       right: 0;
   }
 }
+
+
+
+.features {
+  overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 55px;
+}
+
+.features .feat {
+  float: left;
+  width: 33.33333%;
+  height: 150px;
+}
+
+.features .feat h2 {
+color: #566366;
+}
+
+.features .feat p {
+  line-height: 1.7;
+  color: #919191;
+}
+
+
+
+.Container-2 {
+width : 1170px;
+margin : auto;
+}
+
+.clearfix {clear: both;}
+
+
+
+
+.about-me {
+  background-color: #F2F2F2;
+  overflow: hidden;
+}
+
+.about-me .image {
+  float: left;
+  width: 40%;
+
+}
+
+.about-me .image img { 
+  width: 100%;
+  margin: 50px 0px;
+ }
+
+.about-me .info {
+  float: left;
+  width: 60%;
+}
+.about-me .info  h2 {
+margin: 40px 0px 20px 40px;
+color: #566366;
+}
+
+.about-me .info > p {
+  margin: 0px 0px 10px 40px;
+  line-height: 1.7;
+  color: #666;
+
+}
+
+.about-me .info p {
+  line-height: 1.6;
+  color: #666;
+
+
+}
+.about-me .info .hobbies {
+  overflow: hidden;
+  margin: 20px 0px 0px 40px;
+  
+}
+
+
+.about-me .info .hobbies .contect {
+float: left;
+width: 50%;
+min-height: 100px;
+overflow: hidden;
+}
+
+.about-me .info .hobbies .contect h3 {
+  color: #555;
+}
+
+.about-me .info .hobbies .contect .icon {
+  float: left;
+  width: 12%;
+  margin-right: 5%;
+}
+.about-me .info .hobbies .contect .icon img {
+  max-width: 100%;
+  
+  
+}
+
+.about-me .info .hobbies .contect .text {
+  float: left;
+  width: 83%;
+}
+
+
+.my-skils {
+
+ padding-top: 30px;
+ padding-bottom: 0px;
+ overflow: hidden;
+
+ 
+
+}
+
+.my-skils .skils  h2 {
+margin: 40px 0px 20px 40px;
+color: #000000;
+}
+
+
+
+.my-skils .skils p {
+  line-height: 1.6;
+  color: rgb(0, 0, 0);
+}
+
+.my-skils .skils button {
+  background: none;
+  border : 2px solid #2ecc71;
+  color: #2ecc71;
+  padding: 10px 45px;
+  margin: 10px;
+
+}
+.my-skils .skils button:hover {
+background-color: #fff;
+}
+.my-skils .skils , 
+.my-skils .progress {
+
+  width: 50%;
+  float: left;
+  
+}
+.my-skils .progress .technique{
+  margin-left: 50px;
+}
+.my-skils .progress .technique h3 {
+color: #555;
+}
+
+.my-skils .progress .technique div {
+  background-color: #f2f2f1;
+  height: 25px;
+  }
+
+.my-skils .progress .technique div span {
+  background-color: #2ecc71;
+  height: 25px;
+  display: block;
+  line-height: 25px;
+  text-align: right;
+  color: #fff;
+  font-weight: bold;
+}
+
+.resume {
+  background-color: #F2F2F2;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  text-align: center;
+  width: 100%;
+  display:inline-block;
+
+  
+}
+.resume h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #666;
+}
+
+.resume p {
+  line-height: 1.9;
+  padding:   20px;
+}
+
+.resume button {
+  background: none;
+  border: 1px solid #2ecc71;
+  padding : 10px 25px;
+  color: #2ecc71;
+  margin-top: 5px;
+
+}
+
+.my-education {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  overflow: hidden;
+}
+
+
+
+.my-education .main {
+  width: 50%;
+  float: left;
+  margin-right: 5%;
+} 
+
+
+.my-education .main h2 {
+margin: 40px 0px 20px 40px;
+color: #566366;
+}
+
+
+
+
+.my-education .main p {
+  line-height: 1.6;
+  color: #666;
+}
+
+.my-education .exp {
+
+  width: 45%;
+  float: left;
+}
+
+.my-education .exp  h2{
+  margin-top: 80px;
+  margin-bottom: 10px;
+  color: #566366;
+
+  
+}
+.certificate1{
+  width: 550px;
+}
+.my-education .exp p{
+color: rgb(0, 0, 0);
+line-height: 1.7;
+padding: 10px;
+}
+
+.my-education .exp span {
+  padding: 5px 8px;
+  margin-bottom: 10px;
+}
+
+.my-education .exp span {
+  color:#f2f2f1;
+  background-color: #2ecc71
+  }
+
+  .my-education .exp hr {
+      margin: 7px 0;
+      background-color: #999;
+      height: 2px ;
+      border: 0px;
+  }
+
+
+
+
