@@ -307,8 +307,17 @@ margin : auto;
 
 .about-me .image img { 
   width: 100%;
-  margin: 50px 0px;
+  height: 90vh;
+  margin: 50px -50px;
+  cursor: pointer;
+  box-shadow: 5px 8px 5px #000000;
  }
+ .about-me .image img:hover { 
+  box-shadow: 15px 18px 15px #000000;
+  transition: 0.9s ease-in-out;
+  transform: scale(1.1);
+ }
+
 
 .about-me .info {
   float: left;
@@ -319,7 +328,7 @@ margin: 40px 0px 20px 40px;
 color: #566366;
 }
 
-.about-me .info > p {
+.about-me .info p {
   margin: 0px 0px 10px 40px;
   line-height: 1.7;
   color: #666;
@@ -456,12 +465,13 @@ color: #555;
   padding : 10px 25px;
   color: #2ecc71;
   margin-top: 5px;
+  cursor: pointer;
 
 }
 
 .my-education {
   padding-top: 30px;
-  padding-bottom: 30px;
+
   overflow: hidden;
 }
 
@@ -526,6 +536,136 @@ padding: 10px;
       border: 0px;
   }
 
+.WorkExperience{
+  margin: 50px;
+  text-align: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  font-size: 30px;
 
+}
+.containerz {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: rgb(0, 0, 0);
+}
+
+.containerz .clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+ background: url(/Images/Lake_twizel-removebg-preview.png);
+ background-repeat: no-repeat;
+ background-position: right;
+  
+}
+
+.containerz .clip.clip1 {
+  background: url(/Images/depot.PNG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  clip-path: polygon(0 0, 30% 0, 30% 100%, 0% 100%);
+}
+
+.containerz .clip.clip2 {
+  background: url(/Images/fences.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  clip-path: polygon(30% 0, 100% 0%, 80% 100%, 30% 100%);
+}
+
+.containerz .clip.clip3 {
+  background: url(/Images/dad.PNG);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  clip-path: polygon(70% 0, 100% 0, 100% 100%, 70% 100%);
+}
+
+.containerz:hover .clip {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.containerz .clip:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.containerz .clip .content {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 50%;
+  padding: 20px;
+  background: rgba(224, 224, 224, 0.747);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.containerz .clip:hover .content {
+  bottom: 0;
+  opacity: 1;
+}
+
+a{
+  text-decoration: none;
+}
+
+footer{
+  background-color: #272727;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 30px;
+  margin-top: auto;
+}
+
+footer li{
+  list-style: none;
+  margin: 10px;
+  display: inline-block;
+}
+
+.icons a{
+  background: #52527a;
+  color: #272727;
+  padding: 14px;
+  font-size: 20px;
+  border-radius: 100%;
+  display: flex;
+}
+.icons a:hover{
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.menu a{
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.menu a:hover{
+  color: #52527a;
+  transition: 0.5s;
+}
+
+.footer-copyright{
+  background-color:#52527a;
+  color: #ffffff;
+  padding: 15px;
+  margin-top: 30px;
+  text-transform: capitalize;
+}
+
+.footer-copyright p{
+  margin-bottom: 0px;
+}
 
 
