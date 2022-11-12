@@ -14,6 +14,7 @@
 body{
     overflow-x: hidden;
     
+    
 }
 
 /*Sets the main width of the selected area*/
@@ -221,7 +222,7 @@ span{
         transform: rotate(40deg);
         top: 0;
     }
-
+  /*edit side nav*/
     nav .nav-list{
         position: absolute;
         top: 90px;
