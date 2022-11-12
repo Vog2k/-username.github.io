@@ -11,7 +11,52 @@ body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	color: #222;
 }
+.icon-bar {
+  position: fixed;
+  top: 70%;
+  left: 96%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  
+}
 
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+
+}
+
+.icon-bar a:hover {
+  background-color: rgb(139, 139, 139);
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+.Home {
+  background: #000000;
+  color: rgb(255, 255, 255);
+}
+.github{
+  background: #3c096b;
+  color: rgb(255, 255, 255);
+}
+
+
+.content {
+  margin-left: 75px;
+  font-size: 30px;
+}
 .container {
 	position: relative;
 	width: 100%;
@@ -28,14 +73,14 @@ body {
 
 
 @media (min-width: 400px) {
-.container {
+.container-nav{
 	width: 85%;
 	padding: 0;
 }
 }
 
 @media (min-width: 550px) {
-.container {
+.container-nav {
 	width: 80%;
 }
 .column,  .columns {
@@ -55,6 +100,7 @@ body {
 }
 .four.columns {
 	width: 30.6666666667%;
+  padding: 40px;
 }
 .five.columns {
 	width: 39.3333333333%;
@@ -66,7 +112,9 @@ body {
 	width: 56.6666666667%;
 }
 .eight.columns {
-	width: 65.3333333333%;
+	width: 63.3333333333%;
+
+
 }
 .nine.columns {
 	width: 74.0%;
@@ -192,12 +240,10 @@ h6 {
 	font-size: 1.5rem;
 }
 }
-p {
-	margin-top: 0;
-}
+
 
 a {
-	color: #1EAEDB;
+	color: #dbd81e;
 }
 a:hover {
 	color: #0FA0CE;
@@ -214,15 +260,15 @@ header {
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-    width: 100%;
+  width: 100%;
 	height: 100vh;
-    background: url(/Images/over\ look\ qtwn.jpg);
-    position: relative;
-    opacity: .85;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background: url(/Images/over\ look\ qtwn.jpg);
+  position: relative;
+  opacity: .85;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
 }
 .title {
@@ -280,84 +326,11 @@ header {
 	color: #FFFFFF;
 	font-size: 50px;
 }
-.main_nav {
-	position: fixed;
-	top: 0px;
-	max-height: 50px;
-	z-index: 999;
-	width: 100%;
-	padding-top: 17px;
-	background: none;
-	overflow: hidden;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-	opacity: 0;
-	top: -100px;
-	padding-bottom: 6px;
+
+.mob{
+  text-transform: none;
 }
 
-@media only screen and (max-width: 766px) {
-.main_nav {
-	padding-top: 25px;
-}
-}
-.open-nav {
-	max-height: 400px !important;
-}
-.sticky {
-	background-color: #ffffff;
-	opacity: 1;
-	top: 0px;
-}
-nav {
-	width: 100%;
-	margin-top: 5px;
-}
-
-@media only screen and (max-width: 766px) {
-nav {
-	width: 100%;
-}
-}
-nav ul {
-	list-style: none;
-	overflow: hidden;
-	text-align: center;
-}
-
-@media only screen and (max-width: 766px) {
-nav ul {
-	padding-top: 0px;
-	margin-bottom: 22px;
-	text-align: center;
-	width: 100%;
-}
-}
-nav ul li {
-	display: inline-block;
-	margin-left: 35px;
-	line-height: 1.5;
-	letter-spacing: 1px;
-}
-
-@media only screen and (max-width: 766px) {
-nav ul li {
-	width: 100%;
-	padding: 7px 0;
-	margin: 0;
-}
-nav ul li:first-child {
-	margin-top: 70px;
-}
-}
-nav ul a {
-	text-transform: uppercase;
-	font-size: 12px;
-	text-decoration: none;
-}
-nav ul a:hover {
-	color: #CFCFCF;
-}
 .mobile-toggle {
 	display: none;
 	cursor: pointer;
@@ -449,7 +422,9 @@ opacity: 0;
 #about {
 	padding: 100px 0 50px 0;
 }
-
+.fa-graduation-cap, .fa-code, .fa-users, .fa-gamepad{
+  color: #000000;
+}
 
 
 #skills {
@@ -521,7 +496,11 @@ opacity: 0;
     text-decoration: none;
 }
 .text-for-porjects h1{
-    font-size: 40px;
+    font-size: 50px;
+    margin: 50px;
+}
+.text-for-porjects h3{
+  font-size: 30px;
 }
 .cards {
     display: flex;
@@ -577,7 +556,7 @@ opacity: 0;
     color: #ffffff;
     font-size: 0.875rem;
     line-height: 1.5;
-    margin-bottom: 1.25rem;    
+    margin-bottom: 2rem;    
     font-weight: 400;
   }
   .main{
@@ -611,7 +590,7 @@ opacity: 0;
     background: transparent;
     box-shadow: inset 0px 2px 3px 0px black;
   }
-  
+   /*Projects 
   .btn:hover {
     background-color: rgba(255, 255, 255, 0.12);
     transition: 0.8s;
@@ -620,13 +599,13 @@ opacity: 0;
   
   
   }
-
-  /*Projects */
+*/
+ 
 
 .resume {
     background-color: #cacaca;
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding-top: 30px;
+    padding-bottom: 50px;
     text-align: center;
     width: 100%;
     display:inline-block;
@@ -646,9 +625,9 @@ opacity: 0;
   
   .resume button {
     background: none;
-    border: 1px solid #2ecc71;
+    border: 1px solid #000000;
     padding : 10px 25px;
-    color: #2ecc71;
+    color: #000000;
     margin-top: 5px;
     cursor: pointer;
   
@@ -672,7 +651,7 @@ opacity: 0;
   
   .column-33 {
     float: left;
-    width: 25%;
+    width: 24%;
     padding: 20px;
   }
   .column-33 img{
@@ -810,9 +789,9 @@ opacity: 0;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
   
-  .containerz .clip .content {
+  .containerz .clip .content0 {
     position: absolute;
-    bottom: -100%;
+    bottom: 0%;
     left: 0;
     width: 50%;
     padding: 20px;
@@ -821,7 +800,7 @@ opacity: 0;
     transition: 0.5s;
   }
   
-  .containerz .clip:hover .content {
+  .containerz .clip:hover .content0 {
     bottom: 0;
     opacity: 1;
   }
@@ -929,7 +908,7 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 	float: left;
 }
 
-.container:after, .row:after, .u-cf {
+.container-nav:after, .row:after, .u-cf {
 	content: "";
 	display: table;
 	clear: both;
