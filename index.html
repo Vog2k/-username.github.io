@@ -1,83 +1,155 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Timothy Leatau Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Tim Leatau - Home</title>
 </head>
-<body>  
-<section class="hero">
-    <div class="main-width">
-        <header>
-            
-            <div class="logo"><a href="/index.html">
-                <i class="fa-regular fa-t"></i>
-                <i class="fa-regular fa-l"></i>
-            </a>
-            </div>
-            <nav>
-               <div class="hamb" style="text-decoration: none;" >
-                <span></span>
-                <span></span>
-                <span></span>
-               </div> 
-               <ul class="nav-list">
-                <li><a href="index.html"  style="color: rgb(0, 0, 0);
-                    text-shadow: 0 0 10px rgb(255, 255, 255); font-weight: bold ;">Home</a></li>
-                <li><a href="About.html">About Me</a></li>
-                <li><a href="Porfolio.html">Portfolio</a></li>
-              
-                    <li class="btn"><a href="Contact.html">Contact Me</a></li>
-               </ul>
-            </nav>
-        </header>
+<!-- Header Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-        <div class="container">
-            <div class="hero-text">
-                <h3>"Hello world"</h3>
-                <h1>I Am <span class="input"></span></h1>
-                <p>Recently acquired a certificate in Information technology, 
-                Currently studying for a  Diploma in<a href="https://www.whitecliffe.ac.nz/technology/diploma-in-web-development-and-design-l5"> Web Development + Design.</a> </p>
-                    <div class="social">
-                        <a href="https://www.linkedin.com/in/timothyleatau/" target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Vog2k" target="_blank" ><i class="fa-brands fa-github"></i></a>
-                        <a href="" target="_blank" ><i class="fa-brands fa-instagram" ></i></a>
-                    </div>
-                    <a href="Images/Timothy CV - Copy.pdf" download>
-                    <button type="button">Download My CV</button></a>
-                </div>
-
-        </div>
+<header id="header">
+    <div class="main_nav">
+      <div class="container">
+        <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
+        <nav>
+          <ul>
+            <li><a class="smoothscroll" href="#header">Home</a></li>
+            <li><a class="smoothscroll" href="#about">About</a></li>
+            <li><a class="smoothscroll" href="#skills">Services</a></li>
+            <li><a class="smoothscroll" href="#portfolio">Work</a></li>
+            <li><a class="smoothscroll" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-</section>
-    <!--Website referance for typing effect. https://github.com/mattboldt/typed.js-->
-    <script type="text/javascript"src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" ></script>
-  
-    <script>
-    var typed = new Typed ( ".input", {
-        strings : [ "Timothy Leatau ." , "Web Developer . " , "UX Designer . " , ] ,
-        typeSpeed : 70 ,
-        backSpeed : 60 ,
-        loop : true
-        } ) ;
-    </script>
-    <script>
-        var hamburger = document.querySelector(".hamb");
-        var navlist = document.querySelector(".nav-list"); 
-        var links = document.querySelector(".nav-list li");
-        hamburger.addEventListener("click", function (){
-        this.classList.toggle("click");
-        navlist.classList.toggle("open");
-});
-    </script>
+    <div class="title">
+      <div><span class="typcn typcn-heart-outline icon heading"></span></div>
+      <div class="smallsep heading"></div>
+      <h1 class="heading"> "Hello world"</h1>
+      <h2 class="heading">Im Timothy Leatau</h2>
+      <a class="smoothscroll" href="#about">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      </a> </div>
+    <a class="smoothscroll" href="#about">
+    <div class="scroll-down"></div>
+    </a> </header>
+    
+  <!-- About Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+    
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <h1>About</h1>
+        <div class="block"></div>
 
-<div style="text-align:center">
+            <p>Currently studying for a diploma in web development 
+                and web design , While also looking for a full time or part
+                time job for experience.  <br>
+                <br>
+                I love to play games whether that be video games or bored 
+                games pick your poison and lets play ! I also like to 
+                create things from websites to data tables and more.  <br>
+                <br>
+                I recently left my job as a professional detailer to pursue 
+                a new goal in life to become a web developer and eventually 
+                start my own business in the future </p>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <h3><span class="typcn typcn-device-desktop icon"></span>Currently studying</h3>
+          <p>
+            - Practical: Implement Web Application, <br>
+            - Case study: Requirement Analysis and Solution Design.</p>         </div>
+        <div class="six columns">
+          <h3><span class="typcn typcn-pen icon"></span>Web Desing</h3><p>
+          To me designing things is like an art and an achivement. Ever played Minecraft ? Well i could spend hours on that video game creating everything and anything i wanted.
+          Same goes for websites i can spend hours having fun and designing websites.</p>
+              </div>
+        <div class="row">
+          <div class="six columns">
+            <h3><span class="typcn typcn-cog-outline icon"></span>Friends and family</h3>
+            <p> I love spending time with my family and friends, whether it be battling it out in board games or just spending time at the cinemas.   </p> 
+        </div>
+          <div class="six columns">
+            <h3><span class="typcn typcn-lightbulb icon"></span>Gaming</h3>
+        <p> From board games to video games and even sport games I love to compete whether I'm losing or winning its fun finding new tactics and strategies.</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  
+  <!--Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+  
+  <section id="skills">
+    <div class="container">
+      <h1>Current studies</h1>
+      <div class="block"></div>
+      <div class="row">
+        <div class="one-third column">
+          <h3>Web Design</h3>
+          <p>Studying personas to creating wireframes in figma beautyfiying the website is what im all about</p>
+        </div>
+        <div class="one-third column">
+          <h3>Web Development</h3>
+          <p>Learning databases has been mission for me along with </p>
+        </div>
+        <div class="one-third column">
+          <h3>Information technology</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, recusandae, at, labore velit eligendi amet nobis repellat natus.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="eight columns">
+          <div class="progressBar">
+            <h4>Information Technology</h4>
+            <div class="progressBarContainer">
+              <div class="progressBarValue value-100">100% Complete Final grade A+</div>
+            </div>
+          </div>
+          <div class="progressBar">
+            <h4>Web concepts</h4>
+            <div class="progressBarContainer">
+              <div class="progressBarValue value-100">100% Complete Final grade A+</div>
+            </div>
+          </div>
+          <div class="progressBar">
+            <h4>Web design</h4>
+            <div class="progressBarContainer">
+              <div class="progressBarValue value-30"></div>
+            </div>
+          </div>
+          <div class="progressBar">
+            <h4>Web development</h4>
+            <div class="progressBarContainer">
+              <div class="progressBarValue value-20"></div>
+            </div>
+          </div>
+        </div>
+        <div class="four columns">
+          <p>Currently studying for a diploma in Web design and Web development, Before studying for a diploma I recived a certificate in Information technology <br>(Leve 5) studying for 4 months
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Portfolio Section
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->  
+  
+  <div style="text-align:center">
     <h2 class="projects">Current projects</h2>
     <p></p>
   </div>
@@ -93,7 +165,9 @@
             - Navigation links will allow you to reach pages from one to the other, and all other links work reliably and consistently. <br>
             - The form needs to be used when you create the ‘Contact’ page <br>
             - You have to use images (making sure they are responsive as well) when creating ‘Home’ and ‘Tour’ pages</p> 
+        <a href="https://github.com/Vog2k/Travel-NZ-Website" target="_blank" >
         <button class="button">Check it out?</button>
+        </a>
         <div class="fa-iconz">
             <i class="fa-brands fa-html5"> Hypertext Markup Language</i>
             <i class="fa-brands fa-css3-alt"> Cascading Style Sheets</i>
@@ -111,10 +185,14 @@
         <a href="">
           <img src="/Images/travel NZ 2.PNG" width="355" height="471">
         </a>
+        <br>
+        <a href="">
+            <img src="/Images/Screenshot (14).png" width="355" height="471">
+          </a>
       </div>
     </div>
   </div>
-  
+
   <!-- Clarity Section -->
   <div class="container-2" style="background-color:#f1f1f1">
     <div class="row">
@@ -122,7 +200,10 @@
         <img src="/Images/Wedding.PNG" alt="App" width="335" height="471">
         <br>
         <img src="/Images/Screenshot (14).png" alt="App" width="335" height="471">
+        <br>
+        <img src="/Images/Wedding 2.PNG" alt="App" width="335" height="471">
       </div>
+      
       <div class="column-66">
         <h1 class="xlarge-font"><b>Wedding Website</b></h1>
         <h1 class="large-font" style="color:rgb(253, 158, 33);"><b>With the help of google</b></h1>
@@ -133,7 +214,9 @@
         - 5 hours max <br>
         - little experiance
         </p>
-        <button class="button" style="background-color:#04AA6D;">Check this out too?</button>
+        <a href="https://github.com/Vog2k/Wedding-Website" target="_blank" >
+        <button class="button" style="background-color:#04AA6D;" >Check this out too?</button>
+        </a>
         <div class="fa-iconz">
             <i class="fa-brands fa-html5"> Hypertext Markup Language</i>
             <i class="fa-brands fa-css3-alt"> Cascading Style Sheets</i>
@@ -145,33 +228,273 @@
     </div>
   </div>
 </div>  
-</body>
-</html>
+
+<div class="resume">
+    <div class="Container-2">
+
+    <h2> Resume </h2>
+    <a href="Images/Timothy CV - Copy.pdf" download>
+    <button> Download resume </button>
+    </a>
+</div>
+</div>
+<!--Exp-->
+<section>
+    <div class="main">
+        <div class="text-for-porjects">
+        <h1>My Projects within 5 months</h1><br><h1>What im currently working on</h1>
+        <ul class="cards">         
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="/Images//Screenshot (194).png"></div>
+              <div class="card_content">
+                <h2 class="card_title">Wireframe/figma assignment</h2>
+                <p class="card_text">Case study, designing websites for Air line companies</p>
+                <a href="https://github.com/Vog2k/Travel-NZ-Website" target="_blank" >
+                <button class="btn card_btn">Work in progress</button></a>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="/Images/Screenshot (191).png"></div>
+              <div class="card_content">
+                <h2 class="card_title">Calculator design </h2>
+                <p class="card_text">Currently learning React and created a working calculator and clock</p>
+                <a href="https://github.com/Vog2k/Interactive-Web-App/tree/main" target="_blank">
+                <button class="btn card_btn">Work in progress</button></a>
+              </div>
+            </div>
+          </li>
+
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="/Images/Travel NZ.PNG"></div>
+              <div class="card_content">
+                <h2 class="card_title">Parallax Travel website</h2>
+                <p class="card_text">This was created while wanting to learn how to add and edit parallax into a website</p>
+                <button class="btn card_btn">Work in progress</button>
+              </div>
+            </div>
+          </li>
 
 
+
+          
+    <div class="main">
+        <div class="text-for-porjects">
+        <h1>My Projects within 5 months</h1><br><h1>Web design</h1>
+        <ul class="cards">         
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="/Images//Screenshot (194).png"></div>
+              <div class="card_content">
+                <h2 class="card_title">Wireframe/figma assignment</h2>
+                <p class="card_text">Case study, designing websites for theaters</p>
+                <a href="https://github.com/Vog2k/Travel-NZ-Website" target="_blank" >
+                <button class="btn card_btn">Read More</button></a>
+              </div>
+            </div>
+          </li>
+
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="/Images/Screenshot (191).png"></div>
+              <div class="card_content">
+                <h2 class="card_title">Calculator design </h2>
+                <p class="card_text">Currently learning React and created a working calculator and clock</p>
+                <a href="https://github.com/Vog2k/Interactive-Web-App/tree/main" target="_blank">
+                <button class="btn card_btn">Read More</button></a>
+              </div>
+            </div>
+          </li>
+
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="/Images/Travel NZ.PNG"></div>
+              <div class="card_content">
+                <h2 class="card_title">Parallax Travel website</h2>
+                <p class="card_text">This was created while wanting to learn how to add and edit parallax into a website</p>
+                <button class="btn card_btn">Read More</button>
+              </div>
+            </div>
+          </li>
+          <div class="main">
+        <div class="text-for-porjects">
+          <h1>Python</h1></div>
+          <ul class="cards">     
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="Images/Ticket.png"></div>
+              <div class="card_content">
+                <h2 class="card_title">IT help desk small system Python</h2>
+                <p class="card_text">The objecgtive was to create a help desk that would take in problems and give the user a ticket</p>
+                <button class="btn card_btn">Read More</button>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="Images/Grade_Calculator.PNG"></div>
+              <div class="card_content">
+                <h2 class="card_title">Grade Calculator</h2>
+                <p class="card_text">Using python to write syntax and using "if" and "while" loops, while also learning about OOP(Object-oriented programming) in the process </p>
+                <button class="btn card_btn">Read More</button>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="/Images/Bingo.png"></div>
+              <div class="card_content">
+                <h2 class="card_title">Bingo game created with python</h2>
+                <p class="card_text"></p>
+                <button class="btn card_btn">Read More</button>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+      
+
+    </section>
+  
 
   
+  <div class="clearfix"> </div>
+  
+
+  <h1 class="WorkExperience">Work Experience</h1>
+
+
+
+
+           <body>
+              <div class="containerz">
+
+                  <div class="clip" style="color: #04AA6D;
+                  text-align: right;
+                  line-height: 15px;">Hey !! Your not supposed to be here! oh well ! <br>
+                  Well done you found an easter egg .</div>
+            
+                <div class="clip clip1">
+                  <div class="content">
+                      <h2>NZ Bus</h2>
+                      <br>
+                      <p><strong>General Hand / Professional Detailer  </strong>  /  July 2018 – March 2022 </p>
+                      <br> <hr>
+                    <p>Responsibilities: <br>
+                        <br>
+                      • Detailing vehicles,  <br>
+                      • Fuelling buses,  <br>
+                      • Documentation of bus data,  <br>
+                      • Ran an organised the yard,  <br>
+                      • Trained and mentored new employees,  <br>
+                      • Performed general administrative tasks,  <br>
+                      • Maintained a clean and organised working environment to enhance productivity,  <br>
+                      • Maintained a clean and inviting bus environment aiming to always provide 
+                      passengers with apleasant riding experience.  <br>
+                       <br>
+                      Transferable skills gained from role: <br>
+                        <br>
+                      • Teamwork,  <br>
+                      • Multitasking,  <br>
+                      • Computer skills,  <br>
+                      • Administration skills, <br>
+                      • Ability to work unsupervised,  <br>
+                      • Ability to work in a fast-paced, high-pressure environment.   </p> 
+                      <hr> <br>
+                  </div>
+                </div>
+            
+                <div class="clip clip2">
+                  <div class="content">
+                  <h2>Fence Me</h2>
+                  <br>
+                    <p><strong>  Apprentice </strong>  /  May 2015 - November 2016</p>
+                     <br>
+                    <hr> Responsibilities: <br>
+                    <br>
+                    • Assisting in building and installing fences, <br>
+                    • Worked to ensure a positive, hassle-free customer experience, <br>
+                    • Handled installation duties, <br>
+                    • Performed routine landscaping of the grounds, <br>
+                    • Repaired equipment, when necessary, <br>
+                    • Utilised excellent time management skills to complete projects on time. <br>
+                    <br>
+                    Transferable skills gained from role: <br>
+                    <br>
+                    • Gained extensive knowledge of hand and power tools,<br>
+                    • Customer service skills, <br>
+                    • Project management, <br>
+                    • Time management.</p>
+                    <hr>
+                <br>
+                  </div>
+                </div>
+            
+                <div class="clip clip3">
+                  <div class="content">
+                  <h2>Teko Automotives</h2>
+                  <br>
+                    <p><strong> Unpaid Internship </strong>  / May 2011 - December 2012</p>
+                    <br>
+                    <p>                
+                      <p><hr>Responsibilities:<br>
+                          <br>
+                          • Carefully examined vehicles during troubleshooting efforts, <br>
+                          • Repaired and overhauled brake systems, <br>
+                          • Completed full engine repairs and replacements, <br>
+                          • Kept customer satisfaction at the forefront of interactions, <br>
+                          • Worked well independently, and as a team, <br>
+                          • Utilised advanced troubleshooting and diagnostic skills to maintain and repair vehicles. <br>
+                          <br>
+                          Transferable skills gained from role: <br>
+<br>
+                          • People and interpersonal skills, <br>
+                          • Adaptability, <br>
+                          • Ability to learn and apply new knowledge quickly.</p>  
+                          <hr>
+                      <br>
+                    </p>
+                  </div>
+                </div>
+            
+              </div>
+            </body>    
+
+
+  <!-- Footer Section––– -->  
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  
+  <footer>
+    <ul class="icons">
 
-<footer>
-  <ul class="icons">
-      <li><a href="#" target="_blank" ><ion-icon name="logo-whatsapp"></ion-icon></a></li>
-      <li><a href="#" target="_blank" ><ion-icon name="logo-linkedin"></ion-icon></a></li>
-      <li><a href="#" target="_blank" ><ion-icon name="logo-facebook"></ion-icon></a></li>
-      <li><a href="#" target="_blank" ><ion-icon name="logo-instagram"></ion-icon></a></li>
-  </ul>
-  <ul class="menu">
-          <li><a href="/index.html">Home</a></li>
-          <li><a href="/About.html">About Me</a></li>
-          <li><a href="/Porfolio.html">Portfolio</a></li>
-          
-          <li><a href="/Contact.html">Contact Me</a></li>
-  </ul>
-      <div class="footer-copyright">
-          <p>Copyright @ 2022 All Rights Reserved.</p>
-      </div>
-</footer>  
+        <li><a href="www.linkedin.com/in/timothyleatau" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+        <li><a href="https://m.facebook.com/TeejLeatau/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        
+    </ul> 
+
+    <ul class="menu">
+
+            <li><a href="www.linkedin.com/in/timothyleatau">Linked in</a></li>
+            <li><a href="https://m.facebook.com/TeejLeatau/">facebook</a></li>
+            
+
+            <h1 class="mob"> Conact me on Mobile : 0275953431</h1>
+            <hr>
+            <h1 class="mob"> Conact me on Email : Tim.leatau@gmail.com</h1>
+            <style>
+                .mob{
+                    color: #f1f1f1;
+                }
+            </style>
+
+    </ul>
+        <div class="footer-copyright">
+            <p>Copyright @ 2022 All Rights Reserved created by Timothy.</p>
+        </div>
+</footer>
