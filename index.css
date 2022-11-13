@@ -30,7 +30,16 @@ body {
   font-size: 20px;
 
 }
-
+@media (max-width: 400px) {
+  .icon-bar{
+    position: fixed;
+    top: 70%;
+    left: 88%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
 .icon-bar a:hover {
   background-color: rgb(139, 139, 139);
 }
