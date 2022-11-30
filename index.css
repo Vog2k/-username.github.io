@@ -11,7 +11,7 @@ body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	color: #222;
 }
-.icon-bar {
+.iconbar {
   position: fixed;
   top: 70%;
   left: 96%;
@@ -21,7 +21,7 @@ body {
   
 }
 
-.icon-bar a {
+.iconbar a {
   display: block;
   text-align: center;
   padding: 16px;
@@ -30,20 +30,19 @@ body {
   font-size: 20px;
 
 }
-@media (max-width: 400px) {
-  .icon-bar{
-    position: fixed;
-    top: 70%;
-    left: 88%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-}
-.icon-bar a:hover {
+
+.iconbar a:hover {
   background-color: rgb(139, 139, 139);
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
+.sticky + .content {
+  padding-top: 60px;
+}
 .facebook {
   background: #3B5998;
   color: white;
