@@ -74,6 +74,14 @@ body {
 	padding: 0 0px;
 	box-sizing: border-box;
 }
+.container1 {
+	position: relative;
+	width: 100%;
+	max-width: auto;
+	margin: 0 auto;
+	padding: 0 0px;
+	box-sizing: border-box;
+}
 .column, .columns {
 	width: 100%;
 	float: left;
@@ -340,7 +348,25 @@ header {
 .mob{
   text-transform: none;
 }
-
+.banner-mid{
+  display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+  width: 100%;
+	height: 50vh;
+  background: url(/Images/Leatau.PNG);
+  position: relative;
+  opacity: .85;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 .mobile-toggle {
 	display: none;
 	cursor: pointer;
